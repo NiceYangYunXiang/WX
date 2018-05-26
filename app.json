@@ -1,0 +1,57 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/aboutUs/aboutUs",
+    "pages/appointment/appointment",
+    "pages/evaluation/evaluation",
+    "pages/unscramble/un_item/un_item",
+    "pages/unscramble/unscramble",
+    "pages/f_Doctor/f_Doctor",
+    "pages/unscramble/item_content/item_content",
+    "pages/index/clinic/clinic"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "selectedColor":"#ffffff",
+    "borderStyle":"white",
+    "backgroundColor":"#00A2E9",
+    "color":"#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "img/icon/首页.png",
+        "selectedIconPath": "img/icon/19.png"
+      },
+      {
+        "pagePath": "pages/unscramble/unscramble",
+        "text": "指标解读",
+        "iconPath": "img/icon/指标解读.png",
+        "selectedIconPath": "img/icon/19.png"
+      },
+      {
+        "pagePath": "pages/aboutUs/aboutUs",
+        "text": "关于我们",
+        "iconPath": "img/icon/关于我们.png",
+        "selectedIconPath": "img/icon/19.png"
+      },
+      {
+        "pagePath": "pages/appointment/appointment",
+        "text": "咨询服务",
+        "iconPath": "img/icon/预约中心.png",
+        "selectedIconPath": "img/icon/19.png"
+      },
+      {
+        "pagePath": "pages/f_Doctor/f_Doctor",
+        "text": "家庭医生",
+        "iconPath": "img/icon/家庭医生.png",
+        "selectedIconPath": "img/icon/19.png"
+      }
+    ]
+  }
+}

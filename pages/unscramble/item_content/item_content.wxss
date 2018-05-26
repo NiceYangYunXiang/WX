@@ -1,0 +1,50 @@
+.containner{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.headcontainer,.reference,.Indicator_descrip{
+  margin-top: 20rpx;
+  width: 90%;
+  background-color: rgb(171, 206, 42);
+  color: white;
+  border-radius: 20rpx;
+}
+.headcontainer{
+  font-size: 24rpx;
+}
+.miniItemName,.EnName,.miniEnName,.classification,.reTitle,.reCont,.IndeTitle,.IndePlus,.IndePlusCont,.IndeReduce,.IndeReduceCont{
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+}
+.miniItemName,.reTitle,.IndeTitle,.IndePlus,.IndeReduce{
+  letter-spacing: 4rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-top: 20rpx;
+}
+
+.EnName,.miniEnName,.classification,.reCont,.IndeReduceCont,.IndePlusCont{
+  margin-top: 5rpx;
+  font-size: 22rpx;
+}
+
+
+.reTitle{
+  margin-top: 10rpx;
+}
+.reCont{
+  margin-bottom: 20rpx;
+}
+.lastClassfi{
+  margin-bottom: 20rpx;
+}
+.IndeReduceCont,.IndePlusCont{
+  text-indent: 40rpx;
+  margin-bottom: 20rpx;
+}
+.IndePlus,.IndeReduce{
+  letter-spacing: 2rpx;
+  font-size: 28rpx;
+}

@@ -1,0 +1,25 @@
+<view class='container'>
+  <view class='cutRule'></view>
+  <block wx:for="{{clinic}}" wx:for-item="item">
+
+    <view class='clinic'catchtap='makeTelCall' data-cilinc='{{item}}'>
+      <image class='showImg' src='{{item.DhP_Vertical}}'></image>
+      <view class='nubSer'>NO.{{item.number_Serial}}</view>
+      <view class='clinicContainer'>
+        <view class='clinicTitle'>{{item.clinic_name}}</view>
+        <view class='address'>{{item.poi_address}}</view>
+        <view class='phoneNum'>{{item.phone}}</view>
+        <!-- <view class='serving_cell'>
+          <view class='serving_title'> 服务覆盖区：</view>
+          <view class='serving_celltext' catchtap='clinicGPS' data-cilinc="{{item}}">{{item.cell_serving}}</view>
+        </view> -->
+      </view>
+      <view class='daohanggongneng'>
+        <view class='btn gps' catchtap='clinicGPS' data-cilinc="{{item}}">导 航</view>
+        <view class='juli'>距您：{{item.juli}}</view>
+        <view class='btn pingJia' catchtap='pingJia' data-cilinc="{{item}}">评 价</view>
+      </view>
+    </view>
+    <view class='cutRule'></view>
+  </block>
+</view>

@@ -1,0 +1,6 @@
+<view class='container'>
+<text class='te'>即将上线</text>
+<text>敬请期待...</text>
+<image class='fengche' src='/img/icon/19.png'></image>
+<view class='contact_Information' catchtap='makeTelCall'>咨询电话</view>
+</view>

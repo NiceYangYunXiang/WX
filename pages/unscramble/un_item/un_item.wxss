@@ -1,0 +1,23 @@
+@import "/pages/unscramble/logoToApin_template/logoToApin_tem.wxss";
+.container{
+  width: 100%;
+  min-height: 700rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:flex-start;
+  margin-top: 20rpx;
+}
+.miniItemName{
+  width: 90%;
+  height: 60rpx;
+  background-color: rgb(171, 206, 42);
+  border-radius: 30rpx;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 30rpx;
+  line-height: 60rpx;
+  margin-bottom: 20rpx;
+}
+

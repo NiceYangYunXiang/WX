@@ -1,0 +1,111 @@
+<!--index.wxml-->
+<view class="container">
+
+  <!-- 头部  -->
+  <view class='head'>
+  
+     <image src='/img/icon/Logoxuanzhuan.png' class='logo0'></image> 
+    <image src='/img/icon/1.png' class='logo1'></image>
+
+    <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <block wx:else>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </block>
+    </view>
+
+    <image src='/img/icon/4.png' class='logo2'></image>
+
+  </view>
+  <!--头部结束  --> 
+
+  <!-- 搜索区域  -->
+  <view class='searchClinic'>
+    <image class='searchIcon' src='/img/icon/7.png'  type="search" size="20" color="gray" confirm-type='search' />
+    <input class='searchInp' bindinput='showWord' bindconfirm='toClinicPage' type='text' placeholder='搜索 如：吕医生锦利诊所' maxlength="20"></input>
+
+  </view>
+  <!-- 搜索区结束 -->
+
+
+  <!-- 轮播区  -->
+  <swiper class='imgContainer' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" mode='scaleToFill' />
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- 轮播区结束  -->
+  <view class='guanggao'>找到您身边的吕医生</view>
+  <view class='sanjiaoxing'></view>
+  <!-- 诊所筛选功能区  -->
+  <view class='shaixuan'>
+    <view class='shaixuanItem' catchtap='getgaoxinClinic'>
+      <image class='shaixuanIcon' src='/img/icon/13.png'></image>
+      <text>高新区</text>
+    </view>
+    <view class='shaixuanItem' catchtap='gettianfuClinic'>
+      <image class='shaixuanIcon' src='/img/icon/13.png'></image>
+      <text>天府新区</text>
+    </view>
+    <view class='shaixuanItem' catchtap='getshuangliuClinic'>
+      <image class='shaixuanIcon' src='/img/icon/13.png'></image>
+      <text>双流区</text>
+    </view>
+    <view class='shaixuanItem' catchtap='getjinjiangClinic'>
+      <image class='shaixuanIcon' src='/img/icon/13.png'></image>
+      <text>锦江区</text>
+    </view>
+
+  </view>
+  <!--诊所筛选功能区结束  -->
+
+  <!-- 文案区  -->
+
+
+  <view class='wenan'>
+    <view class='wenanFirst'>
+      <image src='http://bmob-cdn-10658.b0.upaiyun.com/2018/05/09/1fa8663b403bbe798045552ffbd866e5.jpg' class='wenanImg'></image>
+      <view class='wenanText'>
+        <text class='wenanTitle'>全科诊疗</text>
+        <text class='wenanTxt'>30年经验研发《临床治疗指南》；
+结合美国梅奥的医学知识库；
+疾病智能鉴别诊断系统；
+避免误诊、漏诊，精准治疗；</text>
+      </view>
+    </view>
+    <view class='wenanFirst'>
+      <view class='wenanText'>
+        <text class='wenanTitle'>云检验中心</text>
+        <text class='wenanTxt'>与最权威医学检验中心合作；
+        2800+项医学检验；
+        基因筛查、常规检验；
+        儿科检查、妇科肿瘤癌症筛查；</text>
+      </view>
+      <image src='http://bmob-cdn-10658.b0.upaiyun.com/2018/05/09/12bd3f314021b0f1801ada9aa8be09de.jpg' class='wenanImg'></image>
+    </view>
+    <view class='wenanFirst'>
+      <image src='http://bmob-cdn-10658.b0.upaiyun.com/2018/05/09/d58b17174005a88780292699fa05a4b4.jpg' class='wenanImg'></image>
+      <view class='wenanText'>
+        <text class='wenanTitle'>家庭医生</text>
+        <text class='wenanTxt'>慢病管理、疾病预防；
+        线上线下随时问诊；
+        常规基础服务包；
+        个性定制服务包；</text>
+      </view>
+    </view>
+    <view class='wenanFirst'>
+      <view class='wenanText'>
+        <text class='wenanTitle'>转诊服务</text>
+        <text class='wenanTxt'>直通美国梅奥医学中心；
+        专家越洋远程会诊；
+        成都市第一人民医院；
+        成都市第二人民医院；</text>
+      </view>
+      <image src='http://bmob-cdn-10658.b0.upaiyun.com/2018/05/09/2f310dc840514af3806d72c1fea95d8f.jpeg' class='wenanImg'></image>
+    </view>
+  </view>
+  <!-- 文案区结束  -->
+</view>

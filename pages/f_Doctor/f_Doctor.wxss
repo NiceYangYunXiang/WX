@@ -1,0 +1,95 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.te {
+  margin-top: 400rpx;
+}
+
+.container text {
+  font-size: 50rpx;
+  font-weight: bold;
+}
+
+.fengche {
+  margin-top: 10rpx;
+  width: 80rpx;
+  height: 80rpx;
+  animation: circling 1s linear 0s infinite;
+}
+
+@keyframes circling {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.one {
+  margin-left: -200rpx;
+  margin-top: -30rpx;
+  width: 100rpx;
+  border-top: 2rpx rgb(171, 206, 42) solid;
+  position: relative;
+  animation: mymoveone 1s infinite;
+}
+
+.two {
+  margin-left: -150rpx;
+  margin-top: 20rpx;
+  width: 50rpx;
+  border-top: 2rpx rgb(171, 206, 42) solid;
+  position: relative;
+  animation: mymovetwo 1s infinite;
+}
+
+.three {
+  margin-left: -280rpx;
+  margin-top: -15rpx;
+  width: 150rpx;
+  border-top: 3rpx rgb(171, 206, 42) solid;
+  position: relative;
+  animation: mymovethree 1s infinite;
+}
+ 
+@keyframes mymoveone {
+  from {
+    width: 100rpx;
+    margin-left: -200rpx;
+  }
+
+  to {
+    width: 0rpx;
+    margin-left: 0rpx;
+  }
+}
+
+@keyframes mymovetwo {
+  from {
+    width: 50rpx;
+    margin-left: -150rpx;
+  }
+
+  to {
+    width: 0rpx;
+    margin-left: 55rpx;
+  }
+}
+
+@keyframes mymovethree {
+  from {
+    width: 150rpx;
+    margin-left: -280rpx;
+  }
+
+  to {
+    width: 0rpx;
+    margin-left: 20rpx;
+  }
+} 

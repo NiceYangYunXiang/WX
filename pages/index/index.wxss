@@ -1,0 +1,190 @@
+.container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo0{
+  left: 10rpx;
+  position: absolute;
+  width: 30rpx;
+  height: 30rpx;
+  animation:circling 1s linear 0s infinite; 
+}
+@keyframes circling{  
+    from{  
+      transform:rotate(0deg);  
+    }  
+    to{  
+      transform:rotate(-360deg);  
+    }  
+  }  
+.logo1 {
+  width: 100rpx;
+  height: 100rpx;
+  margin-left: 30rpx;
+}
+
+.logo2 {
+  margin-top: 20rpx;
+  width: 200rpx;
+  height: 50rpx;
+  margin-right: 20rpx;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 90rpx;
+}
+
+.userinfo-avatar {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  font-size: 24rpx;
+  color: #aaa;
+}
+
+.searchClinic {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10rpx;
+  width: 100%;
+  height: 80rpx;
+  background-color: rgb(171, 206, 42);
+}
+
+.searchInp {
+  margin: 10rpx auto;
+  width: 90%;
+  height: 60rpx;
+  background-color: white;
+  border-radius: 50rpx;
+  align-items: center;
+  text-align: center;
+}
+
+.searchIcon {
+  position: absolute;
+  width: 50rpx;
+  height: 40rpx;
+  margin-left: 50rpx;
+  z-index: 20;
+  margin-top: 20rpx;
+}
+
+swiper {
+  width: 100%;
+  height: 500rpx;
+}
+
+swiper image {
+  width: 100%;
+  height: 500rpx;
+}
+
+.guanggao {
+  width: 100%;
+  margin-top: 10rpx;
+  font-weight: bold;
+  height: 70rpx;
+  text-align: center;
+  line-height: 70rpx;
+  background-color: rgb(171, 206, 42);
+  color: white;
+  letter-spacing: 10rpx;
+  font-size: 42rpx;
+}
+.sanjiaoxing{
+width: 0;
+height: 0;
+border-bottom-width: 0;
+border-width: 10rpx;
+border-style: solid;
+border-color: rgb(171, 206, 42) transparent transparent transparent;
+}
+
+.shaixuan {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 90%;
+  height: 140rpx;
+}
+
+.shaixuanItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgb(40, 188, 239);
+  width: 18%;
+  height: 120rpx;
+  text-align: center;
+  border-radius: 25rpx;
+}
+
+.shaixuanIcon {
+  width: 45%;
+  height: 55%;
+  margin: 5rpx auto;
+}
+
+.shaixuanItem text {
+  color: white;
+  font-size: 22rpx;
+  font-weight: bold;
+}
+
+.wenan {
+  width: 100%;
+  height: 900rpx;
+}
+
+.wenanFirst {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 300rpx;
+}
+
+.wenanImg {
+  width: 55%;
+  height: 300rpx;
+}
+
+.wenanText {
+  width: 45%;
+  height: 300rpx;
+  background-color: rgb(171, 206, 42);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wenanTitle {
+  height: 50rpx;
+  color: white;
+  font-size: 28rpx;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10rpx;
+}
+
+.wenanTxt {
+  width: 90%;
+  color: white;
+  margin-left: 40rpx;
+  font-size: 22rpx;
+}

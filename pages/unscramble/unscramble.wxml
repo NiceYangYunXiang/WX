@@ -1,0 +1,11 @@
+<import src="/pages/unscramble/logoToApin_template/logotoApin_tem.wxml" />
+
+<view class='container'>
+
+  <view wx:for="{{item}}" wx:for-index="idx" wx:for-item="seriesName" class='unscrambleContainer' catchtap='toUnItem' data-set='{{item[idx].seriesName}}'>
+    <image class='unBimg' src='{{item[idx].seriesIcon}}'></image>
+    <text class='unBtext'>{{item[idx].seriesName}}</text>
+  </view>
+
+</view>
+  <template is='logoToApin_tem'/>

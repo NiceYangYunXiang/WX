@@ -1,0 +1,30 @@
+@import "/pages/unscramble/logoToApin_template/logoToApin_tem.wxss";
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.unscrambleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 28%;
+  height: 240rpx;
+}
+
+.unBimg {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.unBtext {
+  margin-top: 10rpx;
+  text-align: center;
+  font-size: 24rpx;
+}
+
+

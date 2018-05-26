@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.te {
+  margin-top: 400rpx;
+}
+
+.container text {
+  font-size: 50rpx;
+  font-weight: bold;
+}
+
+.fengche {
+  margin-top: 10rpx;
+  width: 80rpx;
+  height: 80rpx;
+  animation: circling 1s linear 0s infinite;
+}
+
+@keyframes circling {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.contact_Information{
+  position: absolute;
+  z-index: 99;
+  margin-top: 700rpx;
+  height: 60rpx;
+  width: 20%;
+  background-color: rgb(171, 206, 42);
+  border-radius: 30rpx;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 30rpx;
+  line-height: 60rpx;
+  margin-bottom: 60rpx;
+}

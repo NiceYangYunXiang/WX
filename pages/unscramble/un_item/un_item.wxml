@@ -1,0 +1,6 @@
+<import src="/pages/unscramble/logoToApin_template/logotoApin_tem.wxml" />
+<view class='container'>
+  <view class='miniItemName' wx:for="{{items}}" wx:for-index="idx" wx:for-item="itemName" data-set='{{items[idx].proName}}' catchtap='toItem_cont'>{{items[idx].proName}}
+  </view>
+</view>
+  <template is='logoToApin_tem'/>

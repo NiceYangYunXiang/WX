@@ -1,0 +1,22 @@
+<import src="/pages/stars/stars-template.wxml" />
+<import src="/pages/evaluation/evaluation-template/evaluation-template.wxml" />
+
+<view class='container'>
+  <image class='storeImg' src='{{clinic.DhP_Horizontal}}' ></image>
+  <view class='storeInformation'>
+    <text class='storeName'>{{clinic.clinic_name}}</text>
+    <text class='storeAdress'>{{clinic.city}}{{clinic.town}}{{clinic.poi_address}}</text>
+    <text class='storeCity'>{{clinic.town}}</text>
+  </view>
+  <image class='storeImage' src='{{clinic.DhP_Horizontal}}' data-src="{{clinic.DhP_Horizontal}}" catchtap='imgClinicShow'></image>
+
+  
+    <view class="movies-template">
+      <template is='evaluationTemplate' data='{{...environment}}' />
+    </view>
+
+    
+
+  
+
+</view>

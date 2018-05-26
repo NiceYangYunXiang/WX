@@ -1,0 +1,23 @@
+<view class='containner'>
+  <view class='headcontainer'>
+    <view class='miniItemName'>{{miniitems.itemProName}}</view>
+    <view class='EnName'>英文名称：{{miniitems.EnName}}</view>
+    <view class='miniEnName'>英文缩写：{{miniitems.shortName}}</view>
+    <view class='classification'>类别：{{miniitems.underProOfS}}</view>
+    <view class='classification'>存放方式：{{proItem.sample_storage}}</view>
+    <view class='classification sampling_type'>样本及容量：{{proItem.sampling_type}}</view>
+    <view class='classification'>出报告时间：{{proItem.reporting_time}}</view>
+    <view class='classification lastClassfi'>PS:所有检验报告意见，以医生解读为准</view>
+  </view>
+  <view class='reference'>
+    <view class='reTitle'>参考值</view>
+    <view class='reCont'>{{miniitems.reference}}</view>
+  </view>
+  <view class='Indicator_descrip'>
+    <view class='IndeTitle'>指标说明</view>
+    <!-- <view class='IndePlus'>高于参考值/阳性</view> -->
+    <view class='IndePlusCont'>{{miniitems.higherThan}}</view>
+    <!-- <view class='IndeReduce'>低于参考值/阴性</view> -->
+    <view class='IndeReduceCont'>{{miniitems.lowerThan}}</view>
+  </view>
+</view>

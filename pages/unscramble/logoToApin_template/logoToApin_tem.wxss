@@ -1,0 +1,44 @@
+.LogoToApin {
+  padding-top: 160rpx;
+  margin-left: 15%;
+  margin-bottom: 0rpx;
+  z-index:999;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 80rpx;
+}
+
+.lvyishengLogo {
+  width: 45%;
+  height: 150rpx;
+}
+
+.c_rule {
+  margin-top: 45rpx;
+  border-left: 2rpx solid black;
+  height: 80rpx;
+}
+
+.yunjianyanLogo {
+  margin-top: 45rpx;
+  width: 45%;
+  height: 180rpx;
+}
+.clickApin{
+  position: absolute;
+  z-index: 99;
+  margin-top: 110rpx;
+  height: 60rpx;
+  width: 20%;
+  background-color: rgb(171, 206, 42);
+  border-radius: 30rpx;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 30rpx;
+  line-height: 60rpx;
+  margin-bottom: 60rpx;
+}

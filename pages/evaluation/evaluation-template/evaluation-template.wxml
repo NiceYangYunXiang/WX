@@ -1,0 +1,57 @@
+<import src="/pages/stars/stars-template.wxml" />
+
+
+<template name='evaluationTemplate'>
+  <view class='evaluationTitleContainer'>
+    <text class='evaluationTitle'>{{title}}</text>
+    <template is="starsTemplate" data='{{stars:stars,id:id,score:score,fourStar:fourStar,threeStar:threeStar,twoStar:twoStar,oneStar:oneStar}}' />
+
+    <view class='ruleRating'>
+      <!-- <view id='{{evaluationKey}}' class='type'>环境</view>  -->
+      <view class='rucut'></view>
+      <block wx:if='{{item.nameType=="环境"}}' wx:for='{{evaluation}}' class='ruleRating_container'>
+        <view class='chooesContainer'>
+          <view id='{{evaluationKey}}' data-index='{{index}}' class="{{item.checked==true?'selected':'btn'}} chooesOne" catchtap='changeEvaluation'>{{item.name_one}}</view>
+          <view id='{{evaluationKey}}' data-index='{{index}}' class="{{item.checked==true?'btn':'selected'}} chooesTwo" catchtap='changeEvaluation'>{{item.name_two}}</view>
+        </view>
+      </block>
+      <view class='rucut'></view>
+    </view>
+    <view class='ruleRating'>
+      <!-- <view id='{{evaluationKey}}' class='type'>服务</view>  -->
+      <view class='rucut'></view>
+      <block wx:if='{{item.nameType=="服务"}}' wx:for='{{evaluation}}' class='ruleRating_container'>
+        <view class='chooesContainer'>
+          <view id='{{evaluationKey}}' data-index='{{index}}' class="{{item.checked==true?'selected':'btn'}} chooesOne" catchtap='changeEvaluation'>{{item.name_one}}</view>
+          <view id='{{evaluationKey}}' data-index='{{index}}' class="{{item.checked==true?'btn':'selected'}} chooesTwo" catchtap='changeEvaluation'>{{item.name_two}}</view>
+        </view>
+      </block>
+      <view class='rucut'></view>
+    </view>
+    <view class='ruleRating'>
+      <!-- <view id='{{evaluationKey}}' class='type'>疗效</view>  -->
+      <view class='rucut'></view>
+      <block wx:if='{{item.nameType=="疗效"}}' wx:for='{{evaluation}}' class='ruleRating_container'>
+        <view class='chooesContainer'>
+          <view id='{{evaluationKey}}' data-index='{{index}}' class="{{item.checked==true?'selected':'btn'}} chooesOne" catchtap='changeEvaluation'>{{item.name_one}}</view>
+          <view id='{{evaluationKey}}' data-index='{{index}}' class="{{item.checked==true?'btn':'selected'}} chooesTwo" catchtap='changeEvaluation'>{{item.name_two}}</view>
+        </view>
+      </block>
+      <view class='rucut'></view>
+    </view>
+
+
+    <view class='evaluationTextCon'>
+      <textarea class='evaluation' placeholder="{{evaluationText}}" placeholder-style="color:rgb(41, 187, 239);" placeholder-style='evaluationContext' id='{{evaluationKey}}' bindblur='textSet'></textarea>
+
+    </view>
+
+    <view class='btn-area'>
+      <view class='formTap' catchtap='upformData'>提交</view>
+      <view class='formTap forTwo' catchtap='reset' type="default" formType="reset">重置</view>
+    </view>
+
+  </view>
+
+  <!-- <view class='hr'></view> -->
+</template>

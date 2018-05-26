@@ -1,0 +1,9 @@
+<template name="logoToApin_tem">
+
+  <view class='LogoToApin' catchtap='natoApin' >
+    <image src='http://bmob-cdn-10658.b0.upaiyun.com/2018/05/14/e7a8770540f509598094cdd526359f33.png' class='lvyishengLogo'></image>
+    <view class='c_rule'></view>
+    <image src='http://bmob-cdn-10658.b0.upaiyun.com/2018/05/10/bb0a924240a5395180f6656009e8ecd4.jpg' class='yunjianyanLogo'></image>
+  <view class='clickApin'> 点击咨询 </view>
+  </view>
+</template>

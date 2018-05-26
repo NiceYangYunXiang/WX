@@ -1,0 +1,40 @@
+<view class='container'>
+  <view class='headContainer'>
+    <image src='/img/icon/关于我们口号.png' class='Logo'></image>
+    <view class='textContainer'>
+      <text class='second'>官方网站：lyuyisheng.com</text>
+      <text class='third'>地址：成都市高新区会龙大道69号</text>
+      <text class='fourse'>电话：028 84263120</text>
+
+    </view>
+  </view>
+
+  <view class='Segmenting_line'></view>
+  <view class='title'>关于我们</view>
+  <view class='content'>
+    吕医生医疗连锁品牌始于1991年，并于2016年成为全国首家获得卫计委（现卫健委）批准成立的社区全科连锁诊所。吕医生一直以标准化、品牌化、规模化的方式运营管理，目前已拥有23家直营店，服务覆盖人群高达70万。  </view>
+  <view class='content'>
+    <view> 吕医生扎根社区，以常见病、多发病、慢性病的诊中治疗为基础，并向诊前疾病预防和诊后健康管理延伸，为社区居民提供全人、全年龄周期的健康管理服务。 </view>
+    <view>2015年引进源自美国梅奥的医学知识库及辅助诊断系统，大幅减少误诊漏诊；并联合全国最大的第三方医学检验实验室，成立了吕医生云检验中心，为居民提供精准治疗服务。</view>
+  </view>
+  <view class='content'>
+    <view class='contentviewOne'>
+      2016年5月，吕医生连锁获首届中国痛客大赛铜牌；
+    </view>
+    <view class='contentviewTwo'>
+      2017年8月，在第五届“榜样中国·我心目中的名医”大型公益评选活动中，吕医生获“优秀家庭医生培养基地”称号；
+    </view>
+    <view class='contentview'>
+      2017年9月，在第三届中美健康峰会青年创新创业大赛总决赛上，吕医生连锁获“创业大赛明日之星”称号。
+    </view>
+
+  </view>
+  <view class='cr'></view>
+  <view class='Segmenting_line'></view>
+  <text class='title'>合作伙伴</text>
+  <view class='hezuohuoban'>
+    <image class='hezuohuobanImg' src='/img/icon/合作伙伴.png'></image>
+  </view>
+
+
+</view>

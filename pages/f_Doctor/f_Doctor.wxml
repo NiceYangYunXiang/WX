@@ -1,0 +1,8 @@
+<view class='container'>
+<text class='te'>即将上线</text>
+<text>敬请期待...</text>
+<image class='fengche' src='/img/icon/19.png'></image>
+<view class='one'></view>
+<view class='two'></view>
+<view class='three'></view>
+</view>
